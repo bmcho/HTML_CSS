@@ -1,0 +1,34 @@
+<html>
+    <head> 
+        <style>
+            .box{
+                background-color: darkgoldenrod;
+                width: 200px;
+                height: 200px;
+                color: white;   
+                display:inline-block;
+            }
+
+            .box:nth-child(2){
+                margin-left: 50px;
+            }
+
+            .box:nth-child(3){
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            disoply : https://www.w3schools.com/cssref/pr_class_display.asp
+
+            inline의 경우 block 아닌 element
+
+            inline-block 은 inline과 block의 장점을 고루 갖춘 속성
+            하지만 디자인의 깨지는 등 한계점이 있다.
+        -->
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </body>
+</html>

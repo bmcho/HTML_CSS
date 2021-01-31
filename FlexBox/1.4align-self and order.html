@@ -1,0 +1,52 @@
+<html>
+    <head> 
+        <style>
+            .child{
+                background-color: darkgoldenrod;
+                width: 200px;
+                /* height: 200px; */
+                color: white;   
+                font-size: 50px;
+            }
+
+            .parent{
+                display: flex;
+                height: 70vh;
+                /* flex-direction: column; */
+                /* Main Axis */
+                justify-content: space-between;
+                /* Cross Axis */
+                align-items: flex-end;
+            }
+
+            .child:nth-child(1){
+                align-self:center;
+                order:1
+            }
+
+            .child:nth-child(3){
+                align-self:stretch;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--
+            child에게만 줄수있는 속성 align-self / order
+            
+            align-self는 align-items과 비슷한 일을함 - crossAxis
+            Parent에게 주는것이 아닌 children에게 주는것
+
+            order는 기본적으로 box들의 순서를 지정한다
+            기본값은 : 0
+            1번의 child에게 order :1의 속성값을 주었다면
+            2,3,1의 순서가 된다 - 2,3의 order값은 0이기 때문에
+
+        -->
+        <div class ="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+    <head> 
+        <style>
+            .box{
+                background-color: darkgoldenrod;
+                width: 200px;
+                height: 200px;
+                color: white;   
+            }
+
+            .wrapper{
+                display: flex;
+                height: 50vh;
+                flex-direction: column;
+                /* Main Axis */
+                justify-content: space-between;
+                /* Cross Axis */
+                align-items: flex-end;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- 
+            1.2강의와 이어지는 내용 -Row, Column의 따른 MainAxis, CrossAxis 설명
+
+            flex box : https://codepen.io/enxaneta/pen/adLPwv
+            flex-direction : https://www.w3schools.com/cssref/css3_pr_flex-direction.asp
+            justify-content : https://www.w3schools.com/cssref/css3_pr_justify-content.asp
+
+            Main Axis 와 Cross Axis의 정의를 확실히 하자
+            flex-direction에 따라 Main Axis와 CrossAxis가 바뀐다.
+            flex-direction 기본 방향은 Row다
+            
+            flex-direction : row
+                > MainAxis : row
+                > CrossAxis : column
+
+            flex-direction : column
+                > MainAxis : column
+                > CrossAxis : row
+
+        -->
+        <div class ="wrapper">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </body>
+</html>
