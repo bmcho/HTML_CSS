@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            .father{
+                display:grid;
+                /* 
+                    'grid'의 규칙은 flexbox와 비슷
+            
+                    grid의 design은 father에서 해야 함
+                    row의 크기를 주지 않았을때에는 font의 크기에 따라 cell의 height이 정해진다
+
+                    밑과 같이 row의 수를 3개 밖에 주지 않았다면
+                    그 이후 오는 row의 height는 cell안의 content의 크기에 따라 달라짐
+                    여기서는 fontsize
+
+                    컬럼 
+                    로우
+                    컬럼 간의 간격
+                    로우 간의 간격
+                    cell 간의 간격
+                    
+                */
+                grid-template-columns: 250px 250px 250px;
+                grid-template-rows: 200px 200px 100px;
+                column-gap: 10px;
+                row-gap: 10px;
+                /* gap:10px; */
+                
+                 
+
+
+            }
+            .child{
+                background: forestgreen;
+                color: white;
+                font-size: 50px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="father">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+            <div class="child">5</div>
+            <div class="child">5</div>
+            <div class="child">5</div>
+            <div class="child">5</div>
+            <div class="child">5</div>
+            <div class="child">5</div>
+            <div class="child">5</div>
+            
+        </div>
+
+        
+    </body>
+</html>

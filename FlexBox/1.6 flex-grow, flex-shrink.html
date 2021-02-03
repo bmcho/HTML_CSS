@@ -1,0 +1,59 @@
+<html>
+    <head> 
+        <style>
+            .child{
+                background-color: darkgoldenrod;
+                width: 200px;
+                height: 200px;
+                color: white;   
+                font-size: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .parent{
+                display: flex;
+                height: 70vh;
+                /* flex-wrap: wrap-reverse; */
+                /* flex-direction: column; */
+                /* Main Axis */
+                justify-content: space-around;
+                /* Cross Axis */
+                /* align-items: flex-end; */
+            }
+
+            .child:nth-child(2){
+                background: black;
+                flex-shrink: 2;
+            }
+
+            .child:nth-child(odd){
+                flex-grow: 1;
+            }
+
+            .child:nth-child(3){
+                flex-grow: 4;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--
+            flex box : https://codepen.io/enxaneta/pen/adLPwv
+            flex-grow, flex-shrink는 child 에게 주는 프로퍼티
+
+            flex-shrink 숫자가 높아질수록 1,3번 child보다 작아진다
+            default:1
+
+            flex-grow가 1이상 여분의 공간만큼 크기가 늘어난다
+            숫자가 높을수록 차지하는 여분의 공간이 많아진다.
+            default:0
+        -->
+        <div class ="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+        </div>
+    </body>
+</html>

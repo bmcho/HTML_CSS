@@ -1,0 +1,59 @@
+<html>
+    <head> 
+        <style>
+            .child{
+                background-color: darkgoldenrod;
+                flex-basis: 300px;
+                height: 200px;
+                color: white;   
+                font-size: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .parent{
+                display: flex;
+                height: 70vh;
+                /* flex-wrap: wrap-reverse; */
+                /* flex-direction: column; */
+                /* Main Axis */
+                justify-content: space-around;
+                /* Cross Axis */
+                /* align-items: flex-end; */
+            }
+
+            .child:nth-child(2){
+                background: black;
+                flex-shrink: 2;
+            }
+
+            .child:nth-child(odd){
+                flex-grow: 1;
+            }
+
+            .child:nth-child(3){
+                flex-grow: 4;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--
+            flex box : https://codepen.io/enxaneta/pen/adLPwv
+            flex-basis child 에게 적용되는 프로퍼티
+            
+             flex-basis는 거의 width와 같지만 처음 element에게 크기를 주는것
+             그렇다고 width라고 볼수는 없음
+
+             flex-basis는 MainAxis의 크기를 의미함
+             row : width
+             column : height
+        -->
+        <div class ="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+        </div>
+    </body>
+</html>

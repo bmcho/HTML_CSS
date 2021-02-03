@@ -16,22 +16,23 @@
                 /* Main Axis */
                 justify-content: space-between;
                 /* Cross Axis */
-                align-items: flex-end;
+                align-items: flex-start;
             }
 
             .child:nth-child(1){
-                align-self:center;
+                /* align-self:center; */
                 order:1
             }
 
             .child:nth-child(3){
-                align-self:stretch;
+                /* align-self:stretch; */
             }
 
         </style>
     </head>
     <body>
         <!--
+            flex box : https://codepen.io/enxaneta/pen/adLPwv
             child에게만 줄수있는 속성 align-self / order
             
             align-self는 align-items과 비슷한 일을함 - crossAxis
